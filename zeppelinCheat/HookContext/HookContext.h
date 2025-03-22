@@ -31,6 +31,7 @@ struct HookContext {
     HookContext(FullGlobalContext& fullGlobalContext) noexcept
         : fullGlobalContext{fullGlobalContext}
     {
+
     }
 
     [[nodiscard]] SoundWatcherState& soundWatcherState() const noexcept

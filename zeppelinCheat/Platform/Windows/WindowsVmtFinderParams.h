@@ -2,7 +2,8 @@
 
 #include <Utils/MemorySection.h>
 
-struct WindowsVmtFinderParams {
+struct WindowsVmtFinderParams
+{
     MemorySection dataSection;
     MemorySection rdataSection;
     const void* dllBase;

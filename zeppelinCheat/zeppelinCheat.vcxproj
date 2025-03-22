@@ -453,6 +453,16 @@
     <ClInclude Include="OutlineGlow\GlowSceneObjectsState.h" />
     <ClInclude Include="OutlineGlow\GlowSceneObjectState.h" />
     <ClInclude Include="Platform\DynamicLibrary.h" />
+    <ClInclude Include="Platform\Linux\FileSystem\FileDescriptor.h" />
+    <ClInclude Include="Platform\Linux\FileSystem\LinuxInputFile.h" />
+    <ClInclude Include="Platform\Linux\LinuxDynamicLibrary.h" />
+    <ClInclude Include="Platform\Linux\LinuxMessageBox.h" />
+    <ClInclude Include="Platform\Linux\LinuxPlatformApi.h" />
+    <ClInclude Include="Platform\Linux\LinuxPlatformApiImpl.h" />
+    <ClInclude Include="Platform\Linux\LinuxVmt.h" />
+    <ClInclude Include="Platform\Linux\LinuxVmtFinder.h" />
+    <ClInclude Include="Platform\Linux\LinuxVmtFinderParams.h" />
+    <ClInclude Include="Platform\Linux\UserHomeFolderPath.h" />
     <ClInclude Include="Platform\Macros\CallingConventions.h" />
     <ClInclude Include="Platform\Macros\CallStack.h" />
     <ClInclude Include="Platform\Macros\FunctionAttributes.h" />

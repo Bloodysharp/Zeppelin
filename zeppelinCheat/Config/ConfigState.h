@@ -6,7 +6,8 @@
 
 #include "ConfigVariables.h"
 
-struct ConfigState {
+struct ConfigState 
+{
     bool autoSaveScheduled{false};
     bool loadScheduled{false};
     ConfigFileOperation currentFileOperation{ConfigFileOperation::None};

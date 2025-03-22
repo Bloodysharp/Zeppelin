@@ -10,6 +10,7 @@ public:
         : buffer{buffer}
         , conversionState{conversionState}
     {
+
     }
 
     void beginRoot() noexcept

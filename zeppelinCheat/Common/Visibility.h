@@ -1,6 +1,8 @@
 #pragma once
 
-enum class Visibility : bool {
+enum class 
+    Visibility : bool 
+{
     Hidden,
     Visible
 };

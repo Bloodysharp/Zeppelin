@@ -1,6 +1,8 @@
 #pragma once
 
-enum class ConfigFileOperation {
+enum class 
+    ConfigFileOperation 
+{
     None,
     Load,
     Save

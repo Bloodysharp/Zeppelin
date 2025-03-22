@@ -11,6 +11,7 @@ public:
     DeferredCompleteObject(Args&&... args) noexcept
         : partialObject{std::forward<Args>(args)...}
     {
+
     }
 
     DeferredCompleteObject(const DeferredCompleteObject&) = delete;

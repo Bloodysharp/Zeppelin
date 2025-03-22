@@ -1,7 +1,8 @@
 #pragma once
 
 template <typename HookContext>
-class ConfigSchema {
+class ConfigSchema 
+{
 public:
     explicit ConfigSchema(HookContext& hookContext) noexcept
         : hookContext{hookContext}

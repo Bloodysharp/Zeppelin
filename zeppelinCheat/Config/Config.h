@@ -208,9 +208,7 @@ private:
 
     void buildConfigTempFilePath() noexcept
     {
-        if (!state().pathToConfigFile)
-            return;
-
+        if (!state().pathToConfigFile) return;
         const std::basic_string_view pathToConfigFile{state().pathToConfigFile.get(), WIN64_LINUX(utils::wcslen, std::strlen)(state().pathToConfigFile.get())};
         const std::basic_string_view configTempFileSuffix{WIN64_LINUX(L".new", ".new")};
         constexpr auto kNullTerminatorLength{1};
@@ -225,8 +223,6 @@ private:
         writeIndex += configTempFileSuffix.length();
         state().pathToConfigTempFile.get()[writeIndex++] = 0;
     }
-
     HookContext& hookContext;
-
     static inline char8_t fileOperationBuffer[build::kConfigFileBufferSize];
 };

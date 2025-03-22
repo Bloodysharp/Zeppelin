@@ -9,7 +9,8 @@
 #include "RTTI/RttiTypeDescriptorFinder.h"
 #include "WindowsVmtFinderParams.h"
 
-class WindowsVmtFinder {
+class WindowsVmtFinder 
+{
 public:
     explicit WindowsVmtFinder(const WindowsVmtFinderParams& params) noexcept
         : dataSection{params.dataSection}
