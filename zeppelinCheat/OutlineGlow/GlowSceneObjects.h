@@ -16,6 +16,7 @@ public:
     explicit GlowSceneObjects(HookContext& hookContext) noexcept
         : hookContext{hookContext}
     {
+
     }
 
     [[nodiscard]] decltype(auto) getGlowSceneObject(cs2::CSceneObject* sceneObject) const noexcept
@@ -121,6 +122,7 @@ private:
                 sceneObjectPointer.clearReferenced();
             else
                 return i;
+
         }
         return GlowSceneObjectsState::kInvalidIndex;
     }

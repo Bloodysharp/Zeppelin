@@ -12,6 +12,7 @@ public:
     GlowSceneObject(Args&&... args) noexcept
         : context{std::forward<Args>(args)...}
     {
+
     }
 
     [[nodiscard]] decltype(auto) baseSceneObject() const noexcept

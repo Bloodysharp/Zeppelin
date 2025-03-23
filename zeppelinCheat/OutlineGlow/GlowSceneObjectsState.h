@@ -9,6 +9,8 @@ struct GlowSceneObjectsState {
     static constexpr auto kInvalidIndex = static_cast<SizeType>(-1);
 
     GlowSceneObjectPointer* glowSceneObjects{nullptr};
+
     SizeType size{0};
+
     SizeType capacity{0};
 };
