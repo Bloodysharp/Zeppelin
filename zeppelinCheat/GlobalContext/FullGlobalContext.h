@@ -33,10 +33,8 @@
 #include <Platform/DynamicLibrary.h>
 #include <Platform/VmtFinder.h>
 #include <Vmt/VmtLengthCalculator.h>
-
 #include "ZeppelinDirectoryPath.h"
 #include "PeepEventsHookResult.h"
-
 #include <CS2/Classes/ConVarTypes.h>
 
 struct FullGlobalContext 
@@ -62,7 +60,6 @@ struct FullGlobalContext
     {
         return Features{featuresStates, hooks, dependencies};
     }
-
     zeppelinDirectoryPath zeppelinDirectoryPath;
     ConfigState configState;
     PatternSearchResults<decltype(kClientPatterns)> clientPatternSearchResults;

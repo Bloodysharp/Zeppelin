@@ -3,6 +3,9 @@
 namespace cs2
 {
 
-struct CEntitySubclassVDataBase {};
+struct CEntitySubclassVDataBase 
+{
+
+};
 
 }

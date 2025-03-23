@@ -23,7 +23,7 @@ public:
 
         if (shouldWriteMe() && writeChar(u8'{'))
             increaseConversionNestingLevel();
-        increaseNestingLevel();
+            increaseNestingLevel();
     }
 
     [[nodiscard]] std::size_t endRoot() noexcept
@@ -33,8 +33,8 @@ public:
 
         if (shouldWriteMe() && writeChar(u8'}'))
             decreaseConversionNestingLevel();
-        decreaseNestingLevel();
-        return writeIndex;
+            decreaseNestingLevel();
+            return writeIndex;
     }
 
     void beginObject(const char8_t* key) noexcept
@@ -66,7 +66,7 @@ public:
         writeUint(key, valueGetter());
     }
 
-private:
+    private:
     void writeBool(const char8_t* key, bool value) noexcept
     {
         if (shouldWriteMe()) {
@@ -88,6 +88,7 @@ private:
             else
                 writeIndex = previousWriteIndex;
         }
+
         increaseIndexInNestingLevel();
     }
 

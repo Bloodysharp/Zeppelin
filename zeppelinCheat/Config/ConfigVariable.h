@@ -7,6 +7,7 @@ struct name { \
 }
 
 template <typename ConfigVariable>
-struct UnpackConfigVariable {
+struct UnpackConfigVariable 
+{
     using type = typename ConfigVariable::ValueType;
 };

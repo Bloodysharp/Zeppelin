@@ -1,13 +1,9 @@
 ﻿#include "Utils/ManuallyDestructible.h"
 #include "Platform/Macros/IsPlatform.h"
-
 #include "GlobalContext/GlobalContext.h"
 #include "MemoryAllocation/MemoryAllocatorBaseImpl.h"
-
 constinit ManuallyDestructible<GlobalContext> GlobalContext::globalContext;
-
 #include "Endpoints.h"
-
 #if IS_WIN64()
 #include "BuildConfig.h"
 #include "MemoryPatterns/Windows/WindowsPatterns.h"

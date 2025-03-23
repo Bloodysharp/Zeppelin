@@ -6,7 +6,8 @@
 #include <utility>
 
 template <typename T>
-struct ManuallyDestructible {
+struct ManuallyDestructible 
+{
     ManuallyDestructible() = default;
     ManuallyDestructible(const ManuallyDestructible&) = delete;
     ManuallyDestructible(ManuallyDestructible&&) = delete;

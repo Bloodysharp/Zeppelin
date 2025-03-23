@@ -10,6 +10,7 @@ public:
     SpanSlice(std::span<T> span, std::size_t centerOffset) noexcept
         : span{ span }, centerOffset{ centerOffset }
     {
+
     }
 
     [[nodiscard]] std::span<T> operator()() const noexcept

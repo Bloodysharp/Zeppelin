@@ -8,7 +8,9 @@ struct SdlDll : DynamicLibrary {
     SdlDll() noexcept
         : DynamicLibrary{cs2::SDL_DLL}
     {
+
     }
+
 
     [[nodiscard]] sdl3::SDL_PeepEvents* peepEvents() const noexcept
     {

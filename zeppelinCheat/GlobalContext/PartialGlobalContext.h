@@ -9,7 +9,8 @@
 #include <Platform/DynamicLibrary.h>
 #include <SDL/SdlDll.h>
 
-struct PartialGlobalContext {
+struct PartialGlobalContext 
+{
     explicit PartialGlobalContext(DynamicLibrary clientDLL, DynamicLibrary panoramaDLL, SdlDll sdlDLL) noexcept
         : patternFinders{
             PatternFinder<PatternNotFoundLogger>{clientDLL.getCodeSection().raw()},

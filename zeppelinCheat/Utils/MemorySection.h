@@ -12,6 +12,7 @@ struct MemorySection {
         : base{reinterpret_cast<std::uintptr_t>(section.data())}
         , size{section.size()}
     {
+
     }
 
     [[nodiscard]] std::span<const std::byte> raw() const noexcept

@@ -11,8 +11,12 @@ struct ConfigState
     bool autoSaveScheduled{false};
     bool loadScheduled{false};
     ConfigFileOperation currentFileOperation{ConfigFileOperation::None};
+
     UniquePtr<platform::PathCharType[]> pathToConfigDirectory{};
+
     UniquePtr<platform::PathCharType[]> pathToConfigFile{};
+
     UniquePtr<platform::PathCharType[]> pathToConfigTempFile{};
+
     ConfigVariables configVariables{};
 };

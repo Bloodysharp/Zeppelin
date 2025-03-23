@@ -6,7 +6,8 @@
 namespace cs2
 {
 
-struct CCvar {
+struct CCvar 
+{
     using ConVarList = CUtlLinkedList<ConVar*>;
 };
 
