@@ -243,7 +243,7 @@ struct HookContext {
 
     [[nodiscard]] auto soundWatcher() noexcept
     {
-        return SoundWatcher<HookContext>{fullGlobalContext.soundWatcherState, *this};
+        return SoundWatcher<HookContext>{fullGlobalContext.soundWatcherState, * this};
     }
 
 private:
